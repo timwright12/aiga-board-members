@@ -69,9 +69,9 @@ function aiga_post_types_setup() {
 }
 
 // remove comments from this post type
-function remove_comments() {
+function AIGA_remove_comments() {
 	remove_post_type_support( 'board_member', 'comments' );
 }
 
 add_action( 'init', 'aiga_post_types_setup' );
-add_action( 'init', 'remove_comments' );
+add_action( 'init', 'AIGA_remove_comments' );
